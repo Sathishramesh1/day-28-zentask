@@ -8,13 +8,16 @@ function App() {
   
 
   return (
+    <div className='home '>
     <CartProvider>
       <Navbar>
-
+      
       <Home/>
+      
       </Navbar>
       
       </CartProvider>
+      </div>
   )
 }
 

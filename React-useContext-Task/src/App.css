@@ -1,5 +1,6 @@
 #root {
   max-width: 1280px;
+  /* overflow: hidden; */
   /* margin: 0 auto; */
   
   /* padding: 2rem; */
@@ -12,7 +13,7 @@
 .header{
   position: absolute;
   top: 0;
-  width: 98vw;
+  width: 100vw;
   
   
 }
@@ -32,14 +33,17 @@
   height: 400px;
 }
 .home-product{
+  
+  margin-top: auto;
+  padding: 1rem;
   position: relative;
-  top: 5rem;
+  top: 240px;
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   margin-left: 5rem;
   margin-right: 5rem; 
-  
+ background-color: skyblue; 
   
 }
 .product-image{
@@ -57,15 +61,15 @@
  justify-content: center;
 }
 .cart{
-  width: 98%;
-  
-  top:4rem;
+  width: 100vw;
+  /* margin-right: 1rem; */
+  top:8rem;
   position: absolute;
-  left: 1rem;
+  left: 0rem;
   display: flex;
   flex-direction: column;
   
-  background-color: gainsboro;
+  background-color: skyblue;
  
 
 
@@ -80,7 +84,7 @@
 .p-image{
   position: relative;
   margin-top: 2rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   border: 1px solid blue;
   width: 200px;
   height: 200px;
@@ -92,23 +96,40 @@
   aspect-ratio: 2/3;
   object-fit: fill;
 }
+/* .p-flex{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  
+ 
+  
+} */
 .p-details{
+ 
+
   position: relative;
   width: 100%;
   /* border: 1px solid blue; */
   height: 200px;
   margin-top: 2rem;
 }
-.p-stock{
+/* .p-stock{
   display: flex;
-  gap: 25%;
-}
-.p-stock select{
+  gap: 35%;
+} */
+/* .p-stock select{
+  position: relative;
+  left: 15%;
+  top:0rem;
   width: fit-content;
   height: fit-content;
   padding: 10px;
+  
+} */
+/* .select{
+  margin-left: 2rem;
   margin-top: 1rem;
-}
+} */
 .button{
   margin-left: 2rem;
   
@@ -116,7 +137,7 @@
 .button button{
   background-color: red;
 }
-.subtotal{
+/* .subtotal{
   position: relative;
   margin-left: 0rem;
   display: flex;
@@ -125,19 +146,59 @@
   margin-right: 5rem;
   
   
+} */
+/* .subtotal h6{
+  position:relative;
+} */
+
+.subtotal-type{
+  position: absolute;
+  margin-top: 0rem;
+  left: 10%;
 }
-.subtotal h6{
-  position: relative;
-  
-}
-.p-price{
-  display: flex;
+.subtotal-cost {
   position: absolute;
   right: 5rem;
-  justify-content: flex-end;
+}
+
+.shipping{
+  display: flex;
+  margin-top: 2rem;
+}
+.shipping-type{
+  position: absolute;
+  margin-left: 10%;
+ 
+
+}
+.shipping-cost{
+  position: absolute;
+  right: 5rem;
   
 }
+
+.total{
+  display: flex;
+}
+.total-type{
+  position: absolute;
+  left: 10%;
+}
+.total-cost{
+  position: absolute;
+  right:5rem;
+}
+/* .p-price{
+  display: flex;
+  position: absolute;
+  right:5rem;
+  
+  justify-content: flex-end;
+  
+} */
 .promo{
+  margin-top: 2rem;
+  margin-right: 2rem;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -152,4 +213,13 @@
 }
 .card:hover{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.home{
+  background-color: skyblue;
+  height: 1280px;;
+}
+body{
+  background-color: skyblue;
+  overflow-x: hidden;
 }
